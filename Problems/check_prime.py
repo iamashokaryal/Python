@@ -1,0 +1,21 @@
+def is_prime(n):
+
+    if n==0 and n==1:
+        return False
+    elif n>1:
+
+        for i in range(2,n):
+            if(n%i)==0:
+
+                return False
+            
+                break
+        else:
+            return True
+    else:
+        return False
+
+result = is_prime(13)
+
+print(result)
+        
