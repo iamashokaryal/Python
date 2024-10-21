@@ -6,4 +6,3 @@ series = pd.Series(data, index = ['x','y','z'])
 
 print(series)
 
-print(series['x'])
