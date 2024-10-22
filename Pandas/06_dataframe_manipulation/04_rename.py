@@ -9,4 +9,6 @@ df = pd.DataFrame(data)
 # rename column 'Name' to 'Name of Person'
 df.rename(columns={'Name':'Name_of_Person'}, inplace= True)
 
+
+
 print(df)
