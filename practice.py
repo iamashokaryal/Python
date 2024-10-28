@@ -1,14 +1,13 @@
-class Animal:
+dict1 = {}
 
-    def eat(self):
+for i in range(5):
 
-        print('I can eat food')
+    name = input("Enter the name of student: \n")
 
-class Dog(Animal):
+    dict1[i] = name
 
-    def bark(self):
-        print('I can Bark')
+# print('Name:',dict1['Name'])
+# print('Age:',dict1['Age'])
+# print('College:',dict1['College'])
 
-doggy = Dog()
-
-doggy.eat()
+print(dict1)

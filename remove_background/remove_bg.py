@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 
 # Load the input image
-input_image = Image.open('IMG_8938.JPG')
+input_image = Image.open('remove_background/images/IMG_8924.JPG')
 
 # Convert the input image to a numpy array
 input_array = np.array(input_image)
@@ -15,4 +15,4 @@ output_array = rembg.remove(input_array)
 output_image = Image.fromarray(output_array)
 
 # Save the output image
-output_image.save('output_image.png')
+output_image.save('remove_background/output/output_image.png')

@@ -1,23 +1,17 @@
 import pandas as pd
 
-# create a DataFrame
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
-    'Age': [25, 32, 18, 47, 33],
-    'City': ['New York', 'Paris', 'London', 'Tokyo', 'Sydney']
-}
+# create a categorical Series
+data = ['A', 'B', 'A', 'C', 'B']
+cat_series = pd.Series(data, dtype="category")
 
-df = pd.DataFrame(data)
+# display the original categorical variable
+print("Original Series:")
+print(cat_series)
 
-# slice rows from index 1 to 3
-slice_rows = df.loc[1:3]
+# remove specific categories
+categories_to_remove = ["B", "C"]
+cat_series_removed = cat_series.cat.remove_categories(categories_to_remove)
 
-print("Sliced Rows:")
-print(slice_rows)
-print()
-
- # slicing columns from 'Name' to 'Age'
-slice_columns = df.loc[:, 'Name':'Age']
-
-print("Sliced Columns:")
-print(slice_columns)
+# display the modified categorical variable
+print("Modified Series:")
+print(cat_series_removed)
