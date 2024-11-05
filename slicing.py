@@ -1,17 +1,12 @@
-import pandas as pd
 
-# create a categorical Series
-data = ['A', 'B', 'A', 'C', 'B']
-cat_series = pd.Series(data, dtype="category")
+student_marks = [20,30,40,50,60,70,80,90]
 
-# display the original categorical variable
-print("Original Series:")
-print(cat_series)
+pass_student_marks = [marks for marks in student_marks if marks>50]
 
-# remove specific categories
-categories_to_remove = ["B", "C"]
-cat_series_removed = cat_series.cat.remove_categories(categories_to_remove)
 
-# display the modified categorical variable
-print("Modified Series:")
-print(cat_series_removed)
+pass_student_avg = sum(pass_student_marks)/len(pass_student_marks)
+
+print('Avg',pass_student_avg)
+
+print(pass_student_marks)
+
