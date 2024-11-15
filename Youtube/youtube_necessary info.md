@@ -1,0 +1,19 @@
+# Windows:
+
+### Download ffmpeg from the official site: 
+- https://ffmpeg.org/download.html.
+
+- Extract the zip file and add the ffmpeg bin folder to your system's PATH environment variable.
+
+- Right-click on This PC → Properties → Advanced system settings → Environment Variables.
+
+- In the Environment Variables window, look for the Path variable under System variables.
+
+- Select Path and click Edit.
+- Add ffmpeg to the Path
+
+- In the Edit Environment Variable window, click New and paste the path to the ffmpeg bin folder, where ffmpeg.exe is located (for example: C:\ffmpeg\bin\).
+- Click OK to close all the windows.
+- Restart your terminal or IDE.
+
+### verify ffmpeg by : ffmpeg -version
