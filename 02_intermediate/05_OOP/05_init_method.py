@@ -10,7 +10,6 @@ class Student:
         else:
             return False
         
- 
 #creating object
 
 student1 = Student('Harry', 85)

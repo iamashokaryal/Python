@@ -20,7 +20,7 @@ class Buy:
 
 
     def print_result(self):
-
+        print(f"Prices ares : {self.item_prices}")
         print(f"The amount you need to pay is : {self.total_amount}")
 
 buy = Buy()
