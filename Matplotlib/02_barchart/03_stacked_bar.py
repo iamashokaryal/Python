@@ -4,8 +4,6 @@ import pandas as pd
 # Load the data
 medals = pd.read_csv("Matplotlib/src/csv/medals.csv", index_col=0)
 
-# print(medals.columns)
-
 # Create the figure and axis
 fig, ax = plt.subplots()
 
